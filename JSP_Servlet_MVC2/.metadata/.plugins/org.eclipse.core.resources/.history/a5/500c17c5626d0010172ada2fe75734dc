@@ -1,0 +1,23 @@
+package util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBConnection {
+    private static String jdbcURL = "jdbc:mysql://localhost:3306/student_db";
+    private static String jdbcUsername = "root";
+    private static String jdbcPassword = "root";
+
+    public static Connection getConnection() {
+        Connection connection = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+            System.out.println("DB Connected Successfully.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return connection;
+    }
+
+}

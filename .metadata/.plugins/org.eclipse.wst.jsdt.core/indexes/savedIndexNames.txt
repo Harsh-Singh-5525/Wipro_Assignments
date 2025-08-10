@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\Wipro Training\Assignments\Codes\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4091671878.index

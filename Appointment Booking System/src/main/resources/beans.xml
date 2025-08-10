@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- Define doctor schedule as a map -->
+    <util:map id="doctorSchedule" key-type="java.lang.String" value-type="java.util.List">
+        <entry key="DOC101">
+            <list>
+                <value>2025-04-10</value>
+                <value>2025-04-11</value>
+                <value>2025-04-12</value>
+            </list>
+        </entry>
+        <entry key="DOC102">
+            <list>
+                <value>2025-04-12</value>
+            </list>
+        </entry>
+    </util:map>
+
+    <!-- DoctorRepository Bean -->
+    <bean id="doctorRepository" class="com.example2.springcore.DoctorRepositoryImplement">
+        <property name="doctorSchedule" ref="doctorSchedule"/>
+    </bean>
+
+    <!-- AppointmentService Bean -->
+   <bean id="appointmentService" class="com.example2.springcore.AppointmentService">
+    <property name="doctorRepository" ref="doctorRepository"/>
+</bean>
+
+
+</beans>

@@ -1,0 +1,34 @@
+Practice3 : E-commerce - Order Checkout Workflow
+
+use annotation based configuration
+
+
+Scenario: In an e-commerce platform, implement a checkout system that verifies the cart, checks inventory, and places an order. All components must be wired using Spring XML.
+Requirements:
+	annotation configuration only (no xml).
+	Create beans for InventoryService, OrderService, and CartValidator.
+Input Format:
+	OrderService.checkout("CART001")
+Output Format:
+	"Checkout successful for CART001" or
+	"Cart is invalid" or "Item out of stock"
+Classes:
+public class Order {
+    private String orderId;
+    private List<String> itemIds;
+    // getters and setters
+}
+ 
+public interface InventoryService {
+    boolean isAvailable(String itemId);
+}
+ 
+public interface CartValidator {
+    boolean validateCart(String cartId);
+}
+ 
+public interface OrderService {
+    String checkout(String cartId);
+}
+Instructions:
+	use all annotations where ever it is required.
