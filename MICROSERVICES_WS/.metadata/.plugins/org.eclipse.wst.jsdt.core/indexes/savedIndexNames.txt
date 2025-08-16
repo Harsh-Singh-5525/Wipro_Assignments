@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\Wipro Training\Codes\Day16,17,18\MICROSERVICES_WS\PROJECTS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+16814002.index
+3945998227.index
+3494659509.index
+3782400329.index
+4208456573.index

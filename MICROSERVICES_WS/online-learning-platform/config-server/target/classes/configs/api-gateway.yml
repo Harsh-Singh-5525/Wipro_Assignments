@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: api-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      default-filters:
+        - TokenRelay
+      routes:
+        - id: user
+          uri: lb://user-service
+          predicates: [ Path=/users/** ]
+        - id: course
+          uri: lb://course-service
+          predicates: [ Path=/courses/** ]
+        - id: classroom
+          uri: lb://classroom-service
+          predicates: [ Path=/classroom/**, Path=/ws/** ]
+        - id: assessment
+          uri: lb://assessment-service
+          predicates: [ Path=/assessments/** ]
+        - id: notification
+          uri: lb://notification-service
+          predicates: [ Path=/notifications/** ]
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8080
+management.endpoints.web.exposure.include: "*"
