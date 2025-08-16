@@ -1,4 +1,4 @@
-# Online Learning Platform (Microservices Skeleton)
+# Online Learning Platform
 
 This repo contains a runnable skeleton of a microservices-based Online Learning Platform:
 - config-server (Spring Cloud Config Server)
@@ -15,5 +15,3 @@ This repo contains a runnable skeleton of a microservices-based Online Learning 
 4. Run `auth-server`
 5. Run `api-gateway`
 6. Run domain services (`user-service` → `course-service` → `classroom-service` → `assessment-service` → `notification-service`)
-
-> Note: Code is a minimal starter meant for Eclipse import. You will likely tweak configs/ports per your environment.
