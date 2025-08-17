@@ -1,14 +1,13 @@
-1755164349074	Delete resource 'Online Learning Platform'
-1755164359534	Delete resource 'School-Microservice'
-1755164366954	Delete resource 'ecommerce-microservice'
-1755164376098	Delete resource 'api-gateway'
-1755164383732	Delete 10 resources
-1755168239461	Delete resource 'user-service'
-1755169298777	Delete resource 'online-learning-platform-skeleton'
-1755170269884	Delete resource 'Online Learning Platform'
-1755170278488	Delete 5 resources
-1755173586970	Delete resource 'ecommerce-microservice'
-1755173673490	Delete 6 resources
-1755328193192	Delete 4 resources
-1755328200017	Delete resource 'user-service'
-1755328204990	Delete resource 'online-learning-platform'
+1755320970724	Delete 6 resources
+1755321599217	Rename resource 'healthcare-microservices-mysql-only'
+1755321628354	Rename resource 'healthcare-'
+1755321657073	Rename resource 'healthcare-Appointment-RecordSystem'
+1755322637363	Rename resource 'online-learning-microservices-clean'
+1755338004369	Delete 7 resources
+1755338671874	Rename resource 'smart-city-transport-clean'
+1755338728735	Delete resource 'api-gateway'
+1755338739627	Delete resource 'route-service'
+1755338747896	Delete resource 'vehicle-tracking-service'
+1755338760706	Delete resource 'notification-service'
+1755338777467	Delete resource 'ticketing-service'
+1755338787001	Delete resource 'user-service'

@@ -1,0 +1,3 @@
+package com.smartcity.notificationservice.model;
+import jakarta.persistence.*;
+@Entity public class Outbox { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; private Long userId; private String channel; @Column(length=2000) private String payload; private String status="pending"; public Long getId(){return id;} public void setId(Long id){this.id=id;} public Long getUserId(){return userId;} public void setUserId(Long u){this.userId=u;} public String getChannel(){return channel;} public void setChannel(String c){this.channel=c;} public String getPayload(){return payload;} public void setPayload(String p){this.payload=p;} public String getStatus(){return status;} public void setStatus(String s){this.status=s;} }
