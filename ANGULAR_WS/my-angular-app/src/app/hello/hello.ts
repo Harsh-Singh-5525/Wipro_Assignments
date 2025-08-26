@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './hello.css'
 })
 export class Hello {
- message:string =" Welcome To Angular";
- 
+
 }
