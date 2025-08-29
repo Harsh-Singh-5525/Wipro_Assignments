@@ -1,0 +1,9 @@
+<h2>Add Patient</h2>
+<form (ngSubmit)="onSave()" #f="ngForm">
+  <input name="name" [(ngModel)]="patient.name" placeholder="Name" required/>
+  <input name="insuranceId" [(ngModel)]="patient.insuranceId" placeholder="Insurance ID"/>
+  <input name="contactNumber" [(ngModel)]="patient.contactNumber" placeholder="Contact"/>
+  <input name="email" type="email" [(ngModel)]="patient.email" placeholder="Email"/>
+  <button type="submit">Save</button>
+</form>
+<p *ngIf="saved">Saved!</p>
